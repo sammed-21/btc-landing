@@ -73,7 +73,7 @@ const Sentiment = () => {
           <button
             onClick={scrollLeft}
             disabled={!isLeftScrollable}
-            className={`absolute top-0 start-0 z-30 hidden lg:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none scroll-button ${
+            className={`absolute top-3 start-0 z-30 hidden lg:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none scroll-button ${
               isLeftScrollable ? "active" : "hidden"
             }`}
           >
@@ -88,7 +88,7 @@ const Sentiment = () => {
           <button
             onClick={scrollRight}
             disabled={!isRightScrollable}
-            className={`absolute top-0 end-0 z-30 hidden lg:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none scroll-button ${
+            className={`absolute top-3 end-0 z-30 hidden lg:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none scroll-button ${
               isRightScrollable ? "active" : ""
             }`}
           >

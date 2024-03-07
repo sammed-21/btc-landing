@@ -103,7 +103,7 @@ export default function Home() {
             </Revel>
             {/* top 3 trending coin */}
             <Revel>
-              <div className="w-full rounded-lg mb-4  h-full bg-[#FFFFFF] relaitve flex flex-col items-center justify-center ">
+              <div className="w-full hidden lg:flex rounded-lg mb-4  h-full bg-[#FFFFFF] relaitve  flex-col items-center justify-center ">
                 <TrendingCoinRightComponent />
               </div>
             </Revel>

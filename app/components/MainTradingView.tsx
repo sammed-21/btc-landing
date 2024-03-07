@@ -56,7 +56,7 @@ const MainTradingView = (props: Props) => {
       : "bg-[#F1FBF7] text-green-500";
 
   return (
-    <div className="w-full min-w-full flex bg-white p-3 mt-2 md:p-5 rounded-xl gap-5 flex-col">
+    <div className="w-full min-w-full flex bg-white p-3  md:p-5 rounded-xl gap-5 flex-col">
       <div className="text-2xl w-full leading-[28px] justify-start items-center font-semibold flex flex-row">
         <div className="w-full flex flex-row gap-2 items-center">
           <Image

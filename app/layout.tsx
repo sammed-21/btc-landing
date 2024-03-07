@@ -4,6 +4,7 @@ import "./globals.css";
 import PageWrapper from "./components/Page-wrapper";
 import Navbar from "./components/Navbar";
 import YouMayAlsoLike from "./components/YouMayAlsoLike";
+import TrendingCoinRightComponent from "./components/TrendingCoinRightComponent";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,9 @@ export default function RootLayout({
         <div className="w-full lg:flex hidden h-full relative">
 
         <YouMayAlsoLike/>
+        </div>
+        <div className="w-full lg:hidden bg-white flex h-full relative">
+        <TrendingCoinRightComponent />
         </div>
 
         </body>
