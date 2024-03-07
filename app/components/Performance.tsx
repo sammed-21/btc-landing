@@ -3,9 +3,9 @@
 import React, { useEffect, useState } from "react";
 import RangeSlider from "./RangeSlider";
 import Image from "next/image";
+import PeformanceItem from "./PeformanceItem";
 import dot from "@/public/dot.svg";
 import Fetcher from "./Fetcher";
-import PeformanceItem from "./PeformanceItem";
 
 type Props = {};
 type BitcoinApiResponse = {
@@ -42,9 +42,9 @@ const Performance = (props: Props) => {
   const { bitcoin } = res;
   
   return (
-    <div className="bg-white w-full gap-5 py-2 p-2 md:p-6 rounded-lg h-full relative flex flex-col">
+    <div id="" className="bg-white w-full gap-5 py-2 p-2 md:p-6 rounded-lg h-full relative flex flex-col">
       <div className="w-full h-full relative flex flex-col gap-3 ">
-        <h1 id="#fundamentals" className="font-semibold text-2xl">
+        <h1 id="Fundamentals" className="font-semibold text-2xl">
           Performance
         </h1>
 
@@ -64,7 +64,7 @@ const Performance = (props: Props) => {
             className="w-fit h-full"
           />
         </h1>
-        <div className="w-full flex flex-col  md:gap-10 relative md:flex-row ">
+        <div className="w-full flex flex-col sm:gap-5 lg::gap-10 relative md:flex-row ">
           <div className="w-full h-full relative flex flex-col">
 
           <PeformanceItem heading="Bitcoin Price" values={'$' + bitcoin.usd.toLocaleString()}/>

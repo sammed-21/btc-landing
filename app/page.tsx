@@ -3,6 +3,9 @@ import TradingViewWidget from "./components/TradingViewWidget";
 import MainTradingView from "./components/MainTradingView";
 import RangeSlider from "./components/RangeSlider";
 import Performance from "./components/Performance";
+import SubNav from "./components/SubNav";
+import Sentiment from "./components/Sentiment";
+import AboutBitcoin from "./components/AboutBitcoin";
 
 export default function Home() {
   const handleClick = (id: string) => {
@@ -26,23 +29,27 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full flex md:flex-row flex-col gap-5 justify-start items-start">
-          <div className="max-w-screen-[1440px]  w-full md:basis-[70%] flex flex-col  gap-5 justify-center items-start h-full  ">
+        <div className="w-full flex flex-col lg:flex-row gap-5 justify-start items-start">
+          <div className="w-full lg:w-[70%] flex flex-col gap-5 justify-center items-start h-full">
             <MainTradingView />
-            <div className="  w-full ">
-              {" "}
+            <div className="w-full flex flex-col gap-5">
+              <SubNav />
               <Performance />
+              <Sentiment />
+              <AboutBitcoin/>
             </div>
           </div>
 
           {/* right side part */}
-          <div className="basis-full bg-white md:basis-[30%] w-full h-full ">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
-            reprehenderit, dicta repellat, sequi atque aperiam aliquam ratione
-            eveniet animi totam enim natus quam architecto itaque unde similique
-            illum! Temporibus, minus!
+          <div className="bg-white w-full lg:w-[30%] h-full">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            voluptatibus inventore soluta fugit corrupti dolor, asperiores
+            itaque officiis blanditiis exercitationem quidem nobis corporis
+            laudantium tenetur praesentium, quis quod eum consequatur?
           </div>
         </div>
+
+        {/* right side part */}
       </div>
     </div>
   );
