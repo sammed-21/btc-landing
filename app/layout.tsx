@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import PageWrapper from "./components/Page-wrapper";
 import Navbar from "./components/Navbar";
+import YouMayAlsoLike from "./components/YouMayAlsoLike";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,11 @@ export default function RootLayout({
           
         {children}
         </PageWrapper>
+        <div className="w-full lg:flex hidden h-full relative">
+
+        <YouMayAlsoLike/>
+        </div>
+
         </body>
     </html>
   );

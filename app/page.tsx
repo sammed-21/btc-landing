@@ -6,6 +6,9 @@ import Performance from "./components/Performance";
 import SubNav from "./components/SubNav";
 import Sentiment from "./components/Sentiment";
 import AboutBitcoin from "./components/AboutBitcoin";
+import Tokenomics from "./components/Tokenomics";
+import Team from "./components/Team";
+import YouMayAlsoLike from "./components/YouMayAlsoLike";
 
 export default function Home() {
   const handleClick = (id: string) => {
@@ -30,13 +33,15 @@ export default function Home() {
         </div>
 
         <div className="w-full flex flex-col lg:flex-row gap-5 justify-start items-start">
-          <div className="w-full lg:w-[70%] flex flex-col gap-5 justify-center items-start h-full">
+          <div className="w-full mb-[56px] lg:w-[70%] flex flex-col gap-5 justify-center items-start h-full">
             <MainTradingView />
             <div className="w-full flex flex-col gap-5">
               <SubNav />
               <Performance />
               <Sentiment />
               <AboutBitcoin/>
+              <Tokenomics/>
+              <Team/>
             </div>
           </div>
 

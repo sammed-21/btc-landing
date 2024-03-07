@@ -25,9 +25,9 @@ const SentimentCard = (props: Props) => {
         
         {props.title}
         </h1>
-    <span className="text-[#3E5765] text-[10px] md:text-sm font-normal">
+    <p className="text-[#3E5765]  text-[10px]  md:text-sm font-normal">
         {props.description}
-    </span>
+    </p>
 </div>
     </div>
   )

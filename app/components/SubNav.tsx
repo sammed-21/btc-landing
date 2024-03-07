@@ -15,14 +15,14 @@ const SubNav = () => {
     };
 
     return (
-        <nav className="border-b-2 border-[#D3E0E6] transition-all relative overflow-x-auto ease-in-out duration-300 ">
+        <nav className="border-b-2  flex no-scrollbar snap-x overflow-y-hidden gap-3 border-[#D3E0E6] transition-all relative overflow-x-auto ease-in-out duration-300 ">
             <div className="max-w-7xl mx-auto pr-2 ">
                 <div className="flex items-center justify-start h-12">
                     <div className="flex text-[#3E424A]  space-x-2">
                         {['Overview', 'Fundamentals', 'News Insights', 'Sentiments', 'Team', 'Technicals', 'Tokenomics'].map(tab => (
                             <Link
                                 key={tab}
-                                className={`transition-all ease-in-out duration-300 hover:text-[#0141CF] px-3 py-2  text-sm font-medium focus:outline-none ${activeTab === tab ? 'border-b-2 text-[#0141CF] border-[#0141CF]' : ''}`}
+                                className={`transition-all ease-in-out whitespace-nowrap duration-300 hover:text-[#0141CF] px-3 py-2  text-sm font-medium focus:outline-none ${activeTab === tab ? 'border-b-2 w-fit text-[#0141CF] border-[#0141CF]' : ''}`}
                                 href={'#'+tab}
                                 onClick={()=> handleTabClick(tab)}
                             >
