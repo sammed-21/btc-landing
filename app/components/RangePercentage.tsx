@@ -53,7 +53,7 @@ const RangePercentage = (props: Props) => {
     setPrice(Number(event.target.value));
   };
   
- console.log(price)
+ 
 
   return (
     <div className="container flex justify-start items-center overflow-hidden w-full gap-2 md:gap-5 h-full relative">

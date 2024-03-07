@@ -1,16 +1,29 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import TrendingCoinCard from "./TrendingCoinCard";
 import Fetcher from "./Fetcher";
-import { log } from "console";
-import Swipe from "react-easy-swipe";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+ 
+import YouMayAlsoLikeSection from "./YouMayAlsoLikeSection";
+interface ApiResponse {
+  categories: any[]; // Define the type of categories if needed
+  coins: Coin[];
+  nfts: any[]; // Define the type of nfts if needed
+}
 
-type Props = {};
 export interface Coin {
   item: {
     coin_id: number;
-    data: any;
+    data: {
+      price: string;
+      price_btc: string;
+      price_change_percentage_24h: any; // Define the correct type if available
+      market_cap: string;
+      market_cap_btc: string;
+      // price_change_percentage_24h: any;
+      sparkline: string;
+      total_volume: string;
+      total_volume_btc: string;
+      // Add more properties as needed
+    };
     id: string;
     large: string;
     market_cap_rank: number;
@@ -21,13 +34,14 @@ export interface Coin {
     small: string;
     symbol: string;
     thumb: string;
-    // Add more properties as needed
   };
 }
 
-const YouMayAlsoLike = (props: Props) => {
-  const [res, setRes] = useState<any>(null);
+const YouMayAlsoLike = () => {
+  const [res, setRes] = useState<ApiResponse | null>(null);
 
+  //   console.log(res)
+  //   const percentageChangeIn24h = bitcoin.usd_24h_change || 0;
   useEffect(() => {
     async function fetchData() {
       try {
@@ -42,43 +56,18 @@ const YouMayAlsoLike = (props: Props) => {
 
     fetchData();
   }, []);
-
-//   console.log(res)
+ 
   if (!res) {
     // Display loading state
-    return <div>Loading...</div>;
+    return <div className="">loading...</div>;
   }
-
-  //   const percentageChangeIn24h = bitcoin.usd_24h_change || 0;
 
   return (
     <div className=" lg:p-14 h-full bg-white  rounded-lg  flex flex-col gap-5  w-full   relative ">
-      <div className="flex flex-col gap-5 w-full">
-        <h1 className="text-2xl font-semibold leading-[30px]">
-          You May Also Like
-        </h1>
-        {res && (
-          <div className="flex no-scrollbar snap-x overflow-y-hidden gap-3 border-[#D3E0E6] transition-all   overflow-x-auto ease-in-out duration-300 ">
-            {res.coins.map((item: Coin, index: number) => {
-              // Return TrendingCoinCard component with necessary props
-              return <TrendingCoinCard key={index} coin={item} />;
-            })}
-          </div>
-        )}
-      </div>
-      <div className="flex flex-col gap-5 w-full">
-        <h1 className="text-2xl font-semibold leading-[30px]">
-          Trending Coins
-        </h1>
-        {res && (
-          <div className="flex no-scrollbar snap-x overflow-y-hidden gap-3 border-[#D3E0E6] transition-all   overflow-x-auto ease-in-out duration-300 ">
-            {res.coins.map((item: Coin, index: number) => {
-              // Return TrendingCoinCard component with necessary props
-              return <TrendingCoinCard key={index} coin={item} />;
-            })}
-          </div>
-        )}
-      </div>
+       
+      <YouMayAlsoLikeSection  title="You May sammed Also Like" response={res}/>
+      <YouMayAlsoLikeSection  title="Trending Coins" response={res}/>
+    
     </div>
   );
 };

@@ -100,6 +100,7 @@ interface MyDoughnutChartProps {
 const ChartCard: React.FC = () => {
   const options: ChartOptions<"doughnut"> = {
     responsive: true,
+
     plugins: {
       legend: {
         position: "right",
@@ -128,6 +129,7 @@ const ChartCard: React.FC = () => {
 
   return (
     <div style={{}} className="bg-white relative">
+        
       <Doughnut  data={data} className="h-fit object-contain" width={"30%"}
   options={{ maintainAspectRatio: false ,plugins:{legend:{position:"right"}}}} />
       {/* <Doughnut  data={data} className="h-fit object-contain" options={options} /> */}

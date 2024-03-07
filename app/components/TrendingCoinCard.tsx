@@ -26,7 +26,7 @@ const TrendingCoinCard = (props: Props) => {
       : "bg-[#F1FBF7] text-green-500";
 
   return (
-    <div className="p-4 bg-white border-[2px] border-[#E3E3E3] rounded-lg max-h-[160px] min-w-[262px]  h-full w-full">
+    <div className="p-4 bg-white border-[2px] border-[#E3E3E3] rounded-lg max-h-[160px] min-w-[252px]  h-full w-full">
       <div className="w-full h-full flex flex-col justify-center gap-3 items-start">
        <div className="flex flex-col">
         <div className="flex flex-row gap-1 mb-2 justify-start w-fit h-full items-center">
@@ -46,7 +46,7 @@ const TrendingCoinCard = (props: Props) => {
           </div>
         </div>
 
-        <div className="text-sm line-clamp-1 font-medium leading-[24px] text-[#171717]">{coin?.item.data.price.toLocaleString()}</div>
+        <div className="text-[12.58px] lg:text-[20px]  line-clamp-1 font-medium leading-[24px] text-[#171717]">{coin?.item.data.price.toLocaleString()}</div>
         </div>
         <div className="w-full items-center justify-center flex ">
 

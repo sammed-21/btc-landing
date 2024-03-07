@@ -14,7 +14,7 @@ const AboutHoldingBitcoin = (props: Props) => {
     <AboutBitcoinCard className='bg-gradient-to-r from-[#FF9865]  to-[#EF3031]' image={bitcoin2} title='Calculate your tax liability' button='Check Now'/>
 </div>
 <hr className="h-0.5 bg-[#C9CFDD]"/>
-<p className="text-base font-medium leading-[26px] text-[#3E424A]">Fermentum hendrerit imperdiet nulla viverra faucibus. Sit aliquam massa vel convallis duis ac. Mi adipiscing semper scelerisque porttitor pulvinar nunc risus. Fermentum potenti iaculis lacinia congue ipsum fames amet dui. Purus ultrices tincidunt volutpat in eget. Ullamcorper dui
+<p className="text-base font-medium leading-[26px] text-[#3E42A]">Fermentum hendrerit imperdiet nulla viverra faucibus. Sit aliquam massa vel convallis duis ac. Mi adipiscing semper scelerisque porttitor pulvinar nunc risus. Fermentum potenti iaculis lacinia congue ipsum fames amet dui. Purus ultrices tincidunt volutpat in eget. Ullamcorper dui
 
 </p>
   </div>

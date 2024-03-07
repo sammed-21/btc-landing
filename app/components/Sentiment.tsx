@@ -64,7 +64,7 @@ const Sentiment = () => {
 
           <div className="w-full relative h-fit ">
             <div
-              className="no-scrollbar w-screen cursor-grab snap-x snap-mandatory flex-row gap-8 overflow-x-auto scroll-smooth pb-4 active:cursor-grabbing scroll-pr-[calc(80vw-454px)] pr-[calc(80vw-484px)] flex relative"
+              className="no-scrollbar  scroll-mx-5 cursor-grab snap-x snap-mandatory flex-row gap-8 overflow-x-auto scroll-smooth pb-4 active:cursor-grabbing scroll-pr-[calc(80vw-454px)] pr-[calc(80vw-484px)] flex relative"
               ref={scrollContainerRef}
             >
               <SentimentCardSection />
@@ -73,7 +73,7 @@ const Sentiment = () => {
           <button
             onClick={scrollLeft}
             disabled={!isLeftScrollable}
-            className={`absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none scroll-button ${
+            className={`absolute top-0 start-0 z-30 hidden lg:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none scroll-button ${
               isLeftScrollable ? "active" : "hidden"
             }`}
           >
@@ -88,7 +88,7 @@ const Sentiment = () => {
           <button
             onClick={scrollRight}
             disabled={!isRightScrollable}
-            className={`absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none scroll-button ${
+            className={`absolute top-0 end-0 z-30 hidden lg:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none scroll-button ${
               isRightScrollable ? "active" : ""
             }`}
           >

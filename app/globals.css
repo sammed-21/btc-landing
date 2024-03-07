@@ -18,7 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: #DEDFE2;
+  background-color: #EFF2F5;
 }
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
