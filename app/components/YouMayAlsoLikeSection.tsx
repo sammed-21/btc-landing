@@ -68,7 +68,7 @@ const YouMayAlsoLikeSection = ({title, response }: Props) => {
   return (
     <div className="w-full h-full relative">
       <div className="flex flex-col relative gap-5 w-full">
-        <h1 className="text-2xl font-semibold leading-[30px]">
+        <h1 className="text-lg md:text-2xl font-semibold leading--[26px] lg:leading-[30px]">
         {title}
         </h1>
         <div

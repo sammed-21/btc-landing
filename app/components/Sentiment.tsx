@@ -47,7 +47,7 @@ const Sentiment = () => {
   };
 
   return (
-    <div id="Sentiments" className="bg-white w-full overflow-hidden gap-5 py-2 p-2 md:p-6 rounded-lg h-full relative flex flex-col">
+    <div id="Sentiments" className="bg-white scroll-mt-32 w-full  gap-5 py-2 p-2 md:p-6 rounded-lg h-full relative flex flex-col">
       <div className="w-full h-full relative flex flex-col gap-3">
         <h1 className="font-semibold text-2xl">Sentiment</h1>
         <div className="w-full flex flex-col gap-5 h-full relative">
@@ -114,7 +114,7 @@ const Sentiment = () => {
           </h1>
 
           <div className="flex flex-row gap-5 w-full h-ful justify-start items-center">
-            <div className="max-w-[116px] w-full bg-[#EBF9F4] lg:h-[120px] flex items-center justify-center max-h-[120px] h-full rounded-full">
+            <div className="max-w-[116px] w-full bg-[#EBF9F4] min-h-[120px]  lg:min-h-[120px] flex items-center justify-center max-h-[120px] h-full rounded-full">
               <h1 className="text-[36px] text-[#0FBA83] text- font-medium flex items-center justify-center">
                 76{" "}
                 <span
@@ -126,9 +126,9 @@ const Sentiment = () => {
             </div>
             <div className="w-full  justify-start items-start flex h-fit flex-col ">
 
-            <RangePercentage title="Buy" className="bg-red-500" percentage="76" />
-            <RangePercentage title="Buy" className="bg-blue-500" percentage="3" />
-            <RangePercentage title="Buy" className="bg-green-500" percentage="20" />
+            <RangePercentage title="Buy" className="bg-[#00B386]" percentage="76" />
+            <RangePercentage title="Hold" className="bg-[#C7C8CE]" percentage="3" />
+            <RangePercentage title="Sell" className="bg-[#F7324C]" percentage="20" />
             </div>
           </div>
         </div>

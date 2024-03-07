@@ -25,7 +25,7 @@ const Navbar = (props: Props) => {
           alt="logo"
         />
 
-        <div className="md:flex hidden flex-row items-center gap-4 xl:flex font-General-Sans leading-none">
+        <div className="md:flex hidden flex-row items-center gap-8 xl:flex font-General-Sans leading-none">
           <Link href="/about" className="font-semibold text-base leading-5 tracking-[-1%] text-[#0F1629]"> Crypto Taxs </Link>
           <Link href="/student" className="font-semibold text-base leading-5 tracking-[-1%] text-[#0F1629]"> Free tools </Link>
           <Link href="/student" className="font-semibold text-base leading-5 tracking-[-1%] text-[#0F1629]"> Resource Center </Link>
@@ -33,10 +33,9 @@ const Navbar = (props: Props) => {
             Get Started
           </button>
 
-          <div className="z-30  flex relative font-General-Sans  items-center gap-2 xl:flex"></div>
         </div>
         <button
-          className="z-30 absolute right-3 top-5 h-5 w-5 text-gray-700  [&>*]:h-0.5 [&>*]:rounded-full [&>*]:bg-gray-700 [&>*]:transition-all [&>*]:duration-300 [&>*]:ease-in-out"
+          className="z-30 md:hidden absolute right-3 top-5 h-5 w-5 text-gray-700  [&>*]:h-0.5 [&>*]:rounded-full [&>*]:bg-gray-700 [&>*]:transition-all [&>*]:duration-300 [&>*]:ease-in-out"
           onClick={handleMenuClick}
         >
           <div

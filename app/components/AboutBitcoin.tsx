@@ -7,7 +7,7 @@ const AboutBitcoin = (props: Props) => {
   return (
     <div
       id="News Insights"
-      className="bg-white w-full overflow-hidden gap-5 py-2 p-2 md:p-6 rounded-lg h-full relative flex flex-col"
+      className="bg-white scroll-mt-16 w-full gap-5 py-2 p-2 md:p-6 rounded-lg h-full relative flex flex-col"
     >
       <div className="w-full h-full relative   pb-2 flex flex-col gap-6">
         <h1 className="font-semibold text-2xl">About Bitcoin</h1>
@@ -55,12 +55,10 @@ const AboutBitcoin = (props: Props) => {
               eget. Ullamcorper dui
             </p>
           </>
-        <hr className="h-0.5 bg-[#C9CFDD]"/>
+          <hr className="h-0.5 bg-[#C9CFDD]" />
         </div>
       </div>
-        <AboutHoldingBitcoin/>
-        
-        
+      <AboutHoldingBitcoin />
     </div>
   );
 };

@@ -63,7 +63,7 @@ const TrendingCoinRightComponent: React.FC = () => {
   
 
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full p-2 lg:p-6 h-full relative">
       <h2 className="text-[24px] mb-6 font-semibold leading-[28px] text-[#0F1629]">Trending Coins (24h)</h2>
       {res && res.coins && res.coins.length > 0 && (
         <ul>

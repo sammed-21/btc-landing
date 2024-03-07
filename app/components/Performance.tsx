@@ -42,7 +42,7 @@ const Performance = (props: Props) => {
   const { bitcoin } = res;
   
   return (
-    <div id="" className="bg-white w-full gap-5 py-2 p-2 md:p-6 rounded-lg h-full relative flex flex-col">
+    <div id="Fundamentals" className="bg-white scroll-mt-10 w-full gap-5 py-2 p-2 md:p-6 rounded-lg h-full relative flex flex-col">
       <div className="w-full h-full relative flex flex-col gap-3 ">
         <h1 id="Fundamentals" className="font-semibold text-2xl">
           Performance
