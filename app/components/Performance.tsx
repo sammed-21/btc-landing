@@ -49,8 +49,8 @@ const Performance = (props: Props) => {
         </h1>
 
         <div className="flex w-full h-full flex-col gap-2 relative justify-center items-start">
-          <RangeSlider  currentPrice={16930}/>
-          <RangeSlider low="52W Low" minPrice={16930.22} maxPrice={49743.83} high="52W High"  />
+          <RangeSlider />
+          <RangeSlider low="52W Low" minPrice={16930.22} maxPrice={49743.83} high="52W High"  currentPrice={16930}/>
         </div>
       </div>
       <div className="w-full h-full relative flex flex-col gap-8">

@@ -13,7 +13,7 @@ const AboutBitcoin = (props: Props) => {
         <h1 className="font-semibold text-2xl">About Bitcoin</h1>
         <div className="flex gap-2 flex-col">
           <>
-            <h1 className="font-bold text-[18px] text-[#0B1426]">
+            <h1 className="font-bold leading-[26px] text-[18px] text-[#0B1426]">
               What is Bitcoin?
             </h1>
             <p className="text-base text-[#3E424A] font-medium leading-[26px]">
@@ -25,7 +25,7 @@ const AboutBitcoin = (props: Props) => {
             </p>
           </>
           <>
-            <h1 className="font-bold text-[18px] text-[#0B1426]">
+            <h1 className="font-bold leading-[26px] text-[18px] text-[#0B1426]">
               Lorem ipsum dolor sit amet
             </h1>
             <p className="text-base text-[#3E424A] font-medium leading-[26px]">

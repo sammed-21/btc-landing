@@ -51,7 +51,7 @@ const RangeSlider: React.FC<RangeSlider> = ({
                  rounded-lg
                   appearance-none"
         />
-        {currentPrice &&
+        
         <div
         className="absolute h-10 z-50 w-fit gap-2 top-5 flex-col items-center justify-center flex  "
         style={{
@@ -61,16 +61,16 @@ const RangeSlider: React.FC<RangeSlider> = ({
           }}
           >
           <Image
-            width={20}
-            height={20}
+            width={100}
+            height={100}
             src={uparrow}
             alt="Slider Thumb"
-            className="w-fit h-full"
+            className="w-[14px] object-contain  h-full"
             />
 
-          <span className="text-sm   text-gray-600 ">${price.toFixed(2)}</span>
+          <span className="text-sm   text-gray-600 ">${price.toFixed()}</span>
         </div>
-          }
+        
       </div>
       <div className="flex text-right basis-[15%] flex-col space-y-2 w-fit">
         <span className="font-normal text-sm whitespace-nowrap ">

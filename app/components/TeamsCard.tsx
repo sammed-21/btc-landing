@@ -10,8 +10,8 @@ type Props = {
 
 const TeamsCard = (props: Props) => {
   return (
-    <div className="w-full p-3  rounded-lg bg-[#E8F4FD] min-h-[177px] flex gap-4 flex-col items-center justify-center md:flex-row">
-      <div className="w-fit p-4 h-full flex flex-col gap-3 justify-center items-center">
+    <div className="w-full p-3  rounded-lg bg-[#E8F4FD] min-h-[177px] flex gap-4 lg:gap-5 flex-col items-center justify-center md:flex-row">
+      <div className="w-fit lg:p-4 h-full flex flex-col gap-3   justify-center items-center">
         <Image
           width={800 / 2}
           height={600 / 2}
@@ -19,7 +19,7 @@ const TeamsCard = (props: Props) => {
           alt="Slider Thumb"
           className="min-w-[100px] w-full h-full rounded-lg object-contain"
         />
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1.5">
           <h1 className="text-[15px] text-center leading-[19px] font-semibold">
             {props.name}
           </h1>
